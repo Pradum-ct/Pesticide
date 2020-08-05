@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+	<meta charset="utf-8">
+	<title>Bugs are Us</title>
+	<link rel="stylesheet" type="text/css" href="../css/appointment.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+		<nav>
+		<div class="navbar">
+			<input type="checkbox" id="check">
+		<label for="check" class="checkbtn">
+		<i class="fas fa-bars"></i> 
+		</label>
+			<label class="topic">
+			Bugs are Us
+		</label>
+			<ul>
+			<li><i class="fas fa-home"></i><a href="../index.html">Home</a></li>
+			<li><i class="fas fa-calendar-check"></i><a class="active" href="#">Appointment</a></li>
+		</ul>
+		</div>
+	</nav>
+	<section>	</section>
+</head>
+<body>
+	<div class="wrapper">
+		<form method="post" action="../php/book.php">
+			<div class="contact-form">
+				<div class="txta">
+					<h1>Get Your Appointment Now!</h1>
+					<input type="text" class="input" name="name" value="" placeholder="Enter Your Name" required>
+					<input type="email" class="input" name="email" value="" placeholder="Enter Your Email" required>
+					<input type="text" class="input" name="telephone" value="" placeholder="Enter Your Telephone Number" required>
+				</div>
+
+				<div class="txtb">
+					<p>Type of Pest Problem :</p>
+					<input type="radio" id="termites" name="pest" value="termites" checked>
+					<label for="termites">Termites</label><br>
+
+					<input type="radio" id="mice" name="pest" value="mice">
+					<label for="mice">Mice</label><br>
+
+					<input type="radio" id="cockroaches" name="pest" value="cockroaches">
+					<label for="cockroaches">Cockroaches</label><br>
+				</div>
+
+				<div class="txta">
+					<label for="visit">Day For Visit :</label>
+					<input type="date" class="visit" name="visit" required>
+				</div>
+
+				<div class="txtb">
+					<p>Time for Visit :</p>
+					<input type="radio" id="morning" name="time" value="morning" checked>
+					<label for="morning">Morning</label><br>
+
+					<input type="radio" id="afternoon" name="time" value="afternoon">
+					<label for="afternoon">Afternoon</label><br>
+				</div>
+
+				<div class="txta">
+					<textarea name="message" class="input" placeholder="Enter a message" required></textarea>
+				</div>
+
+				<button type="submit" name="btn">DONE</button>
+			</div>
+		</form>
+	</div>
+
+</body>
+<footer>
+	<div class="footer">
+	<p>copyright @2020, Bugs are Us</p>		
+	</div>
+</footer>
+</html>
